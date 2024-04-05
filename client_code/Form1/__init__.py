@@ -18,4 +18,8 @@ class Form1(Form1Template):
     hobby = str(self.text_area_1)
     anvil.server.call('submit' , email = email, hobby = hobby)
     Notification("your response has been recorded").show()
+
+  
+
+  
     
