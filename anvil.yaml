@@ -1,9 +1,23 @@
+dependencies: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+package_name: Ab_bio
 allow_embedding: false
-package_name: M3_App_1
-name: M3 App 1
-startup_form: Form1
-renamed: true
+name: Ab.bio
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
-dependencies: []
-services: []
+metadata: {title: interact, description: 'we at ab.bio share our thought and feelings
+    freely. '}
+startup_form: Form1
+db_schema:
+  table_1:
+    client: none
+    server: full
+    columns:
+    - name: email
+      admin_ui: {width: 200, order: 0}
+      type: string
+    title: Table 1
+renamed: true
