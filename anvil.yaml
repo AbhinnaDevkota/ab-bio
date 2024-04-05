@@ -19,5 +19,8 @@ db_schema:
     - name: email
       admin_ui: {width: 200, order: 0}
       type: string
+    - name: hobby
+      admin_ui: {width: 200, order: 1}
+      type: string
     title: Table 1
 renamed: true

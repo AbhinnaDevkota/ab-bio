@@ -14,7 +14,8 @@ class Form1(Form1Template):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    email = self.text_box_1
-    anvil.server.call('submit' , email = email)
+    email = str(self.text_box_1)
+    hobby = str(self.text_area_1)
+    anvil.server.call('submit' , email = email, hobby = hobby)
     Notification("your response has been recorded").show()
     

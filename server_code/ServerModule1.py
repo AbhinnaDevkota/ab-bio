@@ -15,5 +15,5 @@ import anvil.server
 #   print("Hello, " + name + "!")
 #   return 42
 @anvil.server.callable
-def submit (email):
- app_tables.table_1.add_row(email=email)
+def submit (email, hobby):
+ app_tables.table_1.add_row(email=email,hobby=hobby)
