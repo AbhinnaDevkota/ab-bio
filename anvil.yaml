@@ -22,5 +22,8 @@ db_schema:
     - name: hobby
       admin_ui: {width: 200, order: 1}
       type: string
+    - name: blog
+      admin_ui: {width: 200, order: 2}
+      type: string
     title: Table 1
 renamed: true

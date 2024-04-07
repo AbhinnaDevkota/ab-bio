@@ -17,3 +17,8 @@ import anvil.server
 @anvil.server.callable
 def submit (email, hobby):
  app_tables.table_1.add_row(email=email,hobby=hobby)
+
+@anvil.server.callable
+def submit (blog):
+  app_tables.table_1.add_row(blog=blog)
+  

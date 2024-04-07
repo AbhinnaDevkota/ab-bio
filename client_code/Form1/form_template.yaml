@@ -45,3 +45,12 @@ components:
   name: navbar_links
   layout_properties: {slot: nav-right}
   event_bindings: {show: ABOUT}
+  components:
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: next, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: button_2
+    layout_properties: {}
+    event_bindings: {click: button_2_click}
