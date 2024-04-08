@@ -21,3 +21,6 @@ class Form3(Form3Template):
     blog = str(self.text_area_1)
     anvil.server.call('submit' , blog = blog)
     Notification('Well done now you are a blog writer.').show()
+    open_form('Form4')
+
+  

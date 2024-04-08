@@ -9,7 +9,7 @@ name: Ab.bio
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
 metadata: {title: interact, description: 'we at ab.bio share our thought and feelings
-    freely. '}
+    freely. ', logo_img: null}
 startup_form: Form1
 db_schema:
   table_1:
