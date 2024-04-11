@@ -5,9 +5,12 @@ services:
   server_config: {}
 - source: /runtime/services/anvil/users.yml
   client_config: {allow_signup: false, enable_automatically: true, use_email: true,
-    confirm_email: true, require_secure_passwords: true, use_facebook: false, use_google: false,
+    confirm_email: true, require_secure_passwords: true, use_facebook: false, use_google: true,
     use_token: true}
   server_config: {user_table: users}
+- source: /runtime/services/google.yml
+  client_config: {}
+  server_config: {}
 package_name: Ab_bio
 allow_embedding: false
 name: Ab.bio
@@ -21,9 +24,6 @@ db_schema:
     client: none
     server: full
     columns:
-    - name: email
-      admin_ui: {width: 200, order: 0}
-      type: string
     - name: hobby
       admin_ui: {width: 200, order: 1}
       type: string
