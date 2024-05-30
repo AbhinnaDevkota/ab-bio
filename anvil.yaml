@@ -30,6 +30,9 @@ db_schema:
     - name: blog
       admin_ui: {width: 200, order: 2}
       type: string
+    - name: email
+      admin_ui: {width: 200, order: 3}
+      type: string
     title: Table 1
   users:
     client: none
