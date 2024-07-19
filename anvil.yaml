@@ -4,9 +4,7 @@ services:
   client_config: {}
   server_config: {}
 - source: /runtime/services/anvil/users.yml
-  client_config: {require_secure_passwords: true, use_token: true, use_email: true,
-    allow_remember_me: true, allow_signup: true, enable_automatically: true, confirm_email: true,
-    remember_me_days: 30, use_google: true, use_facebook: false}
+  client_config: {require_secure_passwords: true, use_token: true, use_email: true, allow_remember_me: true, allow_signup: true, enable_automatically: true, confirm_email: true, remember_me_days: 30, use_google: true, use_facebook: false}
   server_config: {user_table: users}
 - source: /runtime/services/google.yml
   client_config: {}
@@ -14,10 +12,8 @@ services:
 package_name: Ab_bio
 allow_embedding: false
 name: Ab.bio
-runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
-  server_spec: null}
-metadata: {title: interact, description: 'we at ab.bio share our thought and feelings
-    freely. ', logo_img: null}
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox, server_spec: null}
+metadata: {title: interact, description: 'we at ab.bio share our thought and feelings freely. ', logo_img: null}
 startup_form: Form1
 db_schema:
   table_1:
