@@ -2,61 +2,64 @@ dependencies: []
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
-  server_config: {}
+  server_config: {auto_create_missing_columns: true}
 - source: /runtime/services/anvil/users.yml
-  client_config: {require_secure_passwords: true, use_token: true, use_email: true, allow_remember_me: true, allow_signup: true, enable_automatically: true, confirm_email: true, remember_me_days: 30, use_google: true, use_facebook: false}
+  client_config: {remember_me_days: 30, use_email: true, share_login_status: true, use_google: true, use_facebook: false, confirm_email: true, use_token: true, allow_remember_me: true, enable_automatically: true, allow_signup: true, require_secure_passwords: true}
   server_config: {user_table: users}
 - source: /runtime/services/google.yml
   client_config: {}
-  server_config: {}
+  server_config: {enc_delegation_refresh_token: 58iROZUNbz/YOZD8UwjDiLrzd/Jgh8jTUFKDRPv+weZLjkru/8ZpsFCsP3ZbdaS1Asqu3b5+hZA7EqDR7oYVWluo4UKuy7hlQwA8Ctn+6s71h0NdjlWbQoHY3q4d4lJd2IMCTqgDcFcnJtjglrOMF3hQfAjNylY1fl1QmdYOYWmK6TUp4g43OKQWagAYEvkfKOC75X40SaOxlRVzkBm1dfciGLjJTIBkTUJPCjcr8Pd+tVFMm+zLW102BIVwE8dcU6MFju3TUeYWGBii5S7btspmbMB+0T8jVGC011D0HQMjZm6ffWvkW2cNdCKLSg==}
 package_name: Ab_bio
-allow_embedding: false
+allow_embedding: true
 name: Ab.bio
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox, server_spec: null}
-metadata: {title: interact, description: 'we at ab.bio share our thought and feelings freely. ', logo_img: null}
+metadata: {title: interact, description: 'we at ab.bio share our thought and feelings freely. ', logo_img: 'asset:feety3.png'}
 startup_form: Form1
 db_schema:
   table_1:
+    title: Table 1
     client: none
     server: full
     columns:
     - name: hobby
-      admin_ui: {width: 200, order: 1}
+      admin_ui: {width: 200}
       type: string
     - name: blog
-      admin_ui: {width: 200, order: 2}
+      admin_ui: {width: 200}
       type: string
     - name: email
-      admin_ui: {width: 200, order: 3}
+      admin_ui: {width: 200}
       type: string
-    title: Table 1
   users:
+    title: Users
     client: none
     server: full
     columns:
     - name: email
-      admin_ui: {order: 0, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: enabled
-      admin_ui: {order: 1, width: 200}
+      admin_ui: {width: 200}
       type: bool
     - name: last_login
-      admin_ui: {order: 2, width: 200}
+      admin_ui: {width: 200}
       type: datetime
     - name: password_hash
-      admin_ui: {order: 3, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: n_password_failures
-      admin_ui: {order: 4, width: 200}
+      admin_ui: {width: 200}
       type: number
     - name: confirmed_email
-      admin_ui: {order: 5, width: 200}
+      admin_ui: {width: 200}
       type: bool
     - name: remembered_logins
-      admin_ui: {order: 6, width: 200}
+      admin_ui: {width: 200}
       type: simpleObject
     - name: signed_up
-      admin_ui: {order: 7, width: 200}
+      admin_ui: {width: 200}
       type: datetime
-    title: Users
+    - name: email_confirmation_key
+      admin_ui: {width: 200}
+      type: string
 renamed: true

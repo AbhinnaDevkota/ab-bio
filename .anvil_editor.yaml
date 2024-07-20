@@ -8,6 +8,8 @@ unique_ids:
   server_modules:
     ServerModule1: '1712295485832391922641244.74316'
   assets:
+    948a4ad9-49cf-4570-b5a7-f098f078c14c.jpg: '1721442967119332341720435.4533'
+    feety3.png: '1721442889842997419655532.3093'
     standard-page.html: QKNLJ6YOSL6ZRJ6MC3W3QBGYZ527AFBJ
     theme.css: NQ6HSP44BD27WVQLPZ3WK2RUIG4RPC2G
   scripts: {}
