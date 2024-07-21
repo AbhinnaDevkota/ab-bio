@@ -14,13 +14,13 @@ components:
     type: Label
     layout_properties: {grid_position: 'QRQJYU,CNXRWX'}
   - name: outlined_2
-    properties: {role: outlined, text: tell us about yourself}
+    properties: {role: outlined, bold: false, align: left, placeholder: '', spacing_above: small, background: '', type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: 'Let us know about your chess status ', margin: null}
     type: TextBox
     layout_properties: {grid_position: 'FPQSWM,PBQDOP'}
     data_bindings:
     - {property: placeholder, code: 'self.item['''']', writeback: false}
   - name: text_area_1
-    properties: {role: null, bold: false, align: left, placeholder: '', spacing_above: small, background: '', underline: false, font: '', foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, auto_expand: false, font_size: null, tooltip: '', height: '', text: ''}
+    properties: {role: null, bold: false, align: left, placeholder: Your Elo and League, spacing_above: small, background: '', underline: false, font: '', foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, auto_expand: false, font_size: null, tooltip: '', height: '', text: '', margin: null}
     type: TextArea
     layout_properties: {grid_position: 'SJGLCX,LNSJDG'}
     event_bindings: {change: text_area_1_change}
