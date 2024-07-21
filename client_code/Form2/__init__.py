@@ -30,4 +30,12 @@ class Form2(Form2Template):
 
   def button_4_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pass
+    open_form('Form4')
+
+  def button_5_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Form5')
+
+  def outlined_button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Form6')
