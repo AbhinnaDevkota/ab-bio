@@ -21,9 +21,7 @@ import anvil.server
 def submit (email, hobby):
  app_tables.table_1.add_row(hobby=hobby)
 
-@anvil.server.callable
-def submit (blog):
-  app_tables.table_1.add_row(blog=blog)
+
 
 @anvil.server.callable
 def print_my_permissions():
