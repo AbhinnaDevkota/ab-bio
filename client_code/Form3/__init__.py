@@ -1,5 +1,6 @@
 from ._anvil_designer import Form3Template
 from anvil import *
+import stripe.checkout
 import anvil.server
 import anvil.google.auth, anvil.google.drive
 from anvil.google.drive import app_files
@@ -20,4 +21,4 @@ class Form3(Form3Template):
     """This method is called when the Image is shown on the screen"""
     pass
 
-    c = Image(source=https://www.chess.com/openings/London-System)
+    c.source = anvil.Abhishika - Personal.Desktop.london opening
