@@ -9,9 +9,6 @@ services:
 - source: /runtime/services/google.yml
   client_config: {}
   server_config: {enc_delegation_refresh_token: 58iROZUNbz/YOZD8UwjDiLrzd/Jgh8jTUFKDRPv+weZLjkru/8ZpsFCsP3ZbdaS1Asqu3b5+hZA7EqDR7oYVWluo4UKuy7hlQwA8Ctn+6s71h0NdjlWbQoHY3q4d4lJd2IMCTqgDcFcnJtjglrOMF3hQfAjNylY1fl1QmdYOYWmK6TUp4g43OKQWagAYEvkfKOC75X40SaOxlRVzkBm1dfciGLjJTIBkTUJPCjcr8Pd+tVFMm+zLW102BIVwE8dcU6MFju3TUeYWGBii5S7btspmbMB+0T8jVGC011D0HQMjZm6ffWvkW2cNdCKLSg==}
-- source: /runtime/services/stripe.yml
-  client_config: {}
-  server_config: {}
 - source: /runtime/services/anvil/email.yml
   client_config: {}
   server_config: {}
