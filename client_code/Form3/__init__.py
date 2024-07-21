@@ -20,4 +20,4 @@ class Form3(Form3Template):
     """This method is called when the Image is shown on the screen"""
     pass
 
-    c = Image(https://chessgoals.com/why-i-dropped-the-london-system/)
+    c = Image(source=https://www.chess.com/openings/London-System)
