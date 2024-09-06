@@ -1,68 +1,69 @@
-dependencies: []
-services:
-- source: /runtime/services/tables.yml
-  client_config: {}
-  server_config: {auto_create_missing_columns: true}
-- source: /runtime/services/anvil/users.yml
-  client_config: {remember_me_days: 30, use_email: true, share_login_status: true, use_google: true, use_facebook: false, confirm_email: true, use_token: true, allow_remember_me: true, enable_automatically: true, allow_signup: true, require_secure_passwords: true}
-  server_config: {user_table: users}
-- source: /runtime/services/google.yml
-  client_config: {}
-  server_config: {enc_delegation_refresh_token: 58iROZUNbz/YOZD8UwjDiLrzd/Jgh8jTUFKDRPv+weZLjkru/8ZpsFCsP3ZbdaS1Asqu3b5+hZA7EqDR7oYVWluo4UKuy7hlQwA8Ctn+6s71h0NdjlWbQoHY3q4d4lJd2IMCTqgDcFcnJtjglrOMF3hQfAjNylY1fl1QmdYOYWmK6TUp4g43OKQWagAYEvkfKOC75X40SaOxlRVzkBm1dfciGLjJTIBkTUJPCjcr8Pd+tVFMm+zLW102BIVwE8dcU6MFju3TUeYWGBii5S7btspmbMB+0T8jVGC011D0HQMjZm6ffWvkW2cNdCKLSg==}
-- source: /runtime/services/anvil/email.yml
-  client_config: {}
-  server_config: {}
-package_name: Ab_bio
 allow_embedding: true
-name: Ab.bio
-runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox, server_spec: null}
-metadata: {title: interact, description: 'we at ab.bio share our thought and feelings freely. ', logo_img: 'asset:feety3.png'}
-startup_form: Form1
 db_schema:
   table_1:
+    client: none
+    columns:
+    - admin_ui: {width: 200}
+      name: hobby
+      type: string
+    - admin_ui: {width: 200}
+      name: blog
+      type: string
+    - admin_ui: {width: 200}
+      name: email
+      type: string
+    server: full
     title: Table 1
-    client: none
-    server: full
-    columns:
-    - name: hobby
-      admin_ui: {width: 200}
-      type: string
-    - name: blog
-      admin_ui: {width: 200}
-      type: string
-    - name: email
-      admin_ui: {width: 200}
-      type: string
   users:
-    title: Users
     client: none
-    server: full
     columns:
-    - name: email
-      admin_ui: {width: 200}
+    - admin_ui: {width: 200}
+      name: email
       type: string
-    - name: enabled
-      admin_ui: {width: 200}
+    - admin_ui: {width: 200}
+      name: enabled
       type: bool
-    - name: last_login
-      admin_ui: {width: 200}
+    - admin_ui: {width: 200}
+      name: last_login
       type: datetime
-    - name: password_hash
-      admin_ui: {width: 200}
+    - admin_ui: {width: 200}
+      name: password_hash
       type: string
-    - name: n_password_failures
-      admin_ui: {width: 200}
+    - admin_ui: {width: 200}
+      name: n_password_failures
       type: number
-    - name: confirmed_email
-      admin_ui: {width: 200}
+    - admin_ui: {width: 200}
+      name: confirmed_email
       type: bool
-    - name: remembered_logins
-      admin_ui: {width: 200}
+    - admin_ui: {width: 200}
+      name: remembered_logins
       type: simpleObject
-    - name: signed_up
-      admin_ui: {width: 200}
+    - admin_ui: {width: 200}
+      name: signed_up
       type: datetime
-    - name: email_confirmation_key
-      admin_ui: {width: 200}
+    - admin_ui: {width: 200}
+      name: email_confirmation_key
       type: string
+    server: full
+    title: Users
+dependencies: []
+metadata: {description: 'we at ab.bio share our thought and feelings freely. ', logo_img: 'asset:feety3.png', title: interact}
+name: Ab.bio
+package_name: Ab_bio
 renamed: true
+runtime_options: {client_version: '3', server_spec: null, server_version: python3-sandbox, version: 2}
+services:
+- client_config: {}
+  server_config: {auto_create_missing_columns: true}
+  source: /runtime/services/tables.yml
+- client_config: {allow_remember_me: true, allow_signup: true, confirm_email: true, enable_automatically: true, remember_me_days: 30, require_secure_passwords: true, share_login_status: true, use_email: true, use_facebook: false, use_google: true, use_token: true}
+  server_config: {user_table: users}
+  source: /runtime/services/anvil/users.yml
+- client_config: {}
+  server_config: {enc_delegation_refresh_token: 58iROZUNbz/YOZD8UwjDiLrzd/Jgh8jTUFKDRPv+weZLjkru/8ZpsFCsP3ZbdaS1Asqu3b5+hZA7EqDR7oYVWluo4UKuy7hlQwA8Ctn+6s71h0NdjlWbQoHY3q4d4lJd2IMCTqgDcFcnJtjglrOMF3hQfAjNylY1fl1QmdYOYWmK6TUp4g43OKQWagAYEvkfKOC75X40SaOxlRVzkBm1dfciGLjJTIBkTUJPCjcr8Pd+tVFMm+zLW102BIVwE8dcU6MFju3TUeYWGBii5S7btspmbMB+0T8jVGC011D0HQMjZm6ffWvkW2cNdCKLSg==}
+  source: /runtime/services/google.yml
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/anvil/email.yml
+startup_form: Form1
+uplink_visible: true

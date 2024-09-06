@@ -1,99 +1,99 @@
-is_package: true
-container:
-  type: HtmlTemplate
-  properties: {html: '@theme:standard-page.html'}
 components:
-- type: ColumnPanel
-  properties: {col_widths: '{}'}
-  name: content_panel
-  layout_properties: {slot: default}
-  components:
-  - type: Button
-    properties:
-      role: null
-      bold: false
-      align: center
-      spacing_above: small
-      background: ''
-      icon: ''
-      underline: false
-      font: ''
-      icon_align: left
-      foreground: ''
-      spacing_below: small
-      visible: true
-      border: ''
-      italic: false
-      enabled: true
-      font_size: null
-      tooltip: ''
-      text: "Weekly Plan\n>Premium openings\n      "
-      margin: null
+- components:
+  - layout_properties: {grid_position: 'WHYTCB,SPKNCS ZJFXKT,VKWWCM'}
     name: button_1
-    layout_properties: {grid_position: 'WHYTCB,SPKNCS ZJFXKT,VKWWCM'}
-  - type: Button
-    properties: {role: outlined-button, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: $2, margin: null}
-    name: outlined_button_1
-    layout_properties: {grid_position: 'WHYTCB,SPKNCS BAYSBH,IHGTVU'}
-  - type: Button
     properties:
-      role: null
-      bold: false
       align: center
-      spacing_above: small
       background: ''
-      icon: ''
-      underline: false
-      font: ''
-      icon_align: left
-      foreground: ''
-      spacing_below: small
-      visible: true
+      bold: false
       border: ''
-      italic: false
       enabled: true
+      font: ''
       font_size: null
+      foreground: ''
+      icon: ''
+      icon_align: left
+      italic: false
+      margin: null
+      role: null
+      spacing_above: small
+      spacing_below: small
+      text: "Weekly Plan\n>Premium openings\n      "
       tooltip: ''
+      underline: false
+      visible: true
+    type: Button
+  - layout_properties: {grid_position: 'WHYTCB,SPKNCS BAYSBH,IHGTVU'}
+    name: outlined_button_1
+    properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, margin: null, role: outlined-button, spacing_above: small, spacing_below: small, text: $2, tooltip: '', underline: false, visible: true}
+    type: Button
+  - layout_properties: {grid_position: 'WHYTCB,PVPTDO SMWERY,LRRWXE'}
+    name: button_2
+    properties:
+      align: center
+      background: ''
+      bold: false
+      border: ''
+      enabled: true
+      font: ''
+      font_size: null
+      foreground: ''
+      icon: ''
+      icon_align: left
+      italic: false
+      margin: null
+      role: null
+      spacing_above: small
+      spacing_below: small
       text: |-
         Monthly Plan
         >Premium Openings
-      margin: null
-    name: button_2
-    layout_properties: {grid_position: 'WHYTCB,PVPTDO SMWERY,LRRWXE'}
-  - type: Button
-    properties: {role: outlined-button, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: $8, margin: null}
-    name: outlined_button_2
-    layout_properties: {grid_position: 'WHYTCB,PVPTDO FIDQIS,APMJBR'}
-  - type: Button
-    properties:
-      role: null
-      bold: false
-      align: center
-      spacing_above: small
-      background: ''
-      icon: ''
-      underline: false
-      font: ''
-      icon_align: left
-      foreground: ''
-      spacing_below: small
-      visible: true
-      border: ''
-      italic: false
-      enabled: true
-      font_size: null
       tooltip: ''
+      underline: false
+      visible: true
+    type: Button
+  - layout_properties: {grid_position: 'WHYTCB,PVPTDO FIDQIS,APMJBR'}
+    name: outlined_button_2
+    properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, margin: null, role: outlined-button, spacing_above: small, spacing_below: small, text: $8, tooltip: '', underline: false, visible: true}
+    type: Button
+  - layout_properties: {grid_position: 'WHYTCB,WSGNRJ RBLLFV,RZONNI'}
+    name: button_3
+    properties:
+      align: center
+      background: ''
+      bold: false
+      border: ''
+      enabled: true
+      font: ''
+      font_size: null
+      foreground: ''
+      icon: ''
+      icon_align: left
+      italic: false
+      margin: null
+      role: null
+      spacing_above: small
+      spacing_below: small
       text: |-
         Yearly Plan
         >Premium Openings
-      margin: null
-    name: button_3
-    layout_properties: {grid_position: 'WHYTCB,WSGNRJ RBLLFV,RZONNI'}
-  - type: Button
-    properties: {role: outlined-button, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: $96, margin: null}
+      tooltip: ''
+      underline: false
+      visible: true
+    type: Button
+  - layout_properties: {grid_position: 'WHYTCB,WSGNRJ KRJVLX,NUEZSY'}
     name: outlined_button_3
-    layout_properties: {grid_position: 'WHYTCB,WSGNRJ KRJVLX,NUEZSY'}
-- type: FlowPanel
-  properties: {}
+    properties: {align: center, background: '', bold: false, border: '', enabled: true, font: '', font_size: null, foreground: '', icon: '', icon_align: left, italic: false, margin: null, role: outlined-button, spacing_above: small, spacing_below: small, text: $96, tooltip: '', underline: false, visible: true}
+    type: Button
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {col_widths: '{}'}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
   name: navbar_links
-  layout_properties: {slot: nav-right}
+  properties: {}
+  type: FlowPanel
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true

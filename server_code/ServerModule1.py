@@ -32,6 +32,6 @@ def print_my_permissions():
   elif anvil.users.get_user()['email'] == super_user:
     print(f"{super_user} is allowed to see this.")
   else:
-    print("This path is for minimum-access users.")ee
+    print("This path is for minimum-access users.")
 
 
